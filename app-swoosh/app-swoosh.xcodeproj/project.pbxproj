@@ -44,6 +44,7 @@
 		18272CAB21A0789100D58354 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18D8DCFF219F1315001D983E /* WelcomeVC.swift */,
 				18272CAD21A0799500D58354 /* LeagueVC.swift */,
 				18272CAF21A079B100D58354 /* SkillVC.swift */,
 			);
@@ -80,7 +81,6 @@
 				18272CAB21A0789100D58354 /* Controller */,
 				18D8DD0F219F1439001D983E /* View */,
 				18D8DCFD219F1315001D983E /* AppDelegate.swift */,
-				18D8DCFF219F1315001D983E /* WelcomeVC.swift */,
 				184E0DC0219F4AEC00CF4FF0 /* Main.storyboard */,
 				18D8DD04219F1315001D983E /* Assets.xcassets */,
 				18D8DD06219F1315001D983E /* LaunchScreen.storyboard */,

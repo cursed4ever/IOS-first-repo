@@ -134,6 +134,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="v1E-vj-2y3" eventType="touchUpInside" id="oXV-wx-MM4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEy-tx-zk1" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="375" height="40"/>
@@ -145,6 +148,9 @@
                                         <state key="normal" title="Womans">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomansTapped:" destination="v1E-vj-2y3" eventType="touchUpInside" id="60K-Ie-2Cy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXQ-RM-v7Z" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="375" height="40"/>
@@ -156,6 +162,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="v1E-vj-2y3" eventType="touchUpInside" id="ok7-2b-BX6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -210,6 +219,7 @@
                         <viewLayoutGuide key="safeArea" id="8W5-sW-wql"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="wqg-N0-pGT" id="kvD-wz-qOA"/>
                         <segue destination="4PU-eD-5ZZ" kind="show" identifier="SkillVCSegue" id="OnF-ls-20H"/>
                     </connections>
                 </viewController>
@@ -276,7 +286,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUg-GG-50z" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUg-GG-50z" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="607" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39594927229999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -284,13 +294,14 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Scc-Ft-cx7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <state key="normal" title="Next">
+                                <state key="normal" title="FINISH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KUg-GG-50z" firstAttribute="leading" secondItem="tCx-ee-Pbe" secondAttribute="leading" id="0JD-eW-tRW"/>
                             <constraint firstItem="S5i-jS-YRW" firstAttribute="leading" secondItem="tCx-ee-Pbe" secondAttribute="leading" id="2AN-XX-3Cs"/>
                             <constraint firstItem="tCx-ee-Pbe" firstAttribute="bottom" secondItem="KUg-GG-50z" secondAttribute="bottom" constant="20" id="7bD-U5-zoX"/>
                             <constraint firstItem="tCx-ee-Pbe" firstAttribute="trailing" secondItem="3a7-3J-UV2" secondAttribute="trailing" id="GuP-d6-HHR"/>
@@ -300,6 +311,7 @@
                             <constraint firstItem="3a7-3J-UV2" firstAttribute="leading" secondItem="tCx-ee-Pbe" secondAttribute="leading" id="TtC-fW-UnC"/>
                             <constraint firstItem="ztq-hr-A4n" firstAttribute="top" secondItem="gJv-SS-9g4" secondAttribute="top" id="Yfo-zH-rO5"/>
                             <constraint firstItem="ztq-hr-A4n" firstAttribute="trailing" secondItem="tCx-ee-Pbe" secondAttribute="trailing" id="cpr-H4-s5X"/>
+                            <constraint firstItem="KUg-GG-50z" firstAttribute="trailing" secondItem="tCx-ee-Pbe" secondAttribute="trailing" id="d38-Sp-FPc"/>
                             <constraint firstItem="ztq-hr-A4n" firstAttribute="leading" secondItem="tCx-ee-Pbe" secondAttribute="leading" id="iND-Yj-VXt"/>
                             <constraint firstItem="ztq-hr-A4n" firstAttribute="bottom" secondItem="tCx-ee-Pbe" secondAttribute="bottom" id="rAG-4b-R9z"/>
                         </constraints>
